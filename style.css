@@ -21,6 +21,7 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 150%;
 }
  
 .title{
@@ -30,16 +31,15 @@ html {
 }
 
 .main{
-    display: flex;
     margin: auto;
     width: 50%;
 }
 
 .recommend{
+    margin: auto;
     text-align: center;
     font-size: 30px;
     width: 33%;
-    display: flex;
     flex-direction: column;
 }
 
@@ -53,12 +53,8 @@ button{
     height: 40px;
 }
 
-.recommend_frame{
-    width: 33%;
-}
-
 .recommend_frame_img{
-    width: 300%;
+    width: 50%;
     position: relative;
 }
 
@@ -76,13 +72,11 @@ button{
     width: 66%;
 }
 
-.favorite_frame{
-    display: flex;
-    justify-content: center;
+.left{
+    position: sticky;
 }
 
 .favorite_left_frame{
-    margin-top: 40px;
     width: 50%;
 }
 
@@ -103,7 +97,6 @@ button{
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-evenly;
-    width: 50%;
 }
 
 .nail_img{
@@ -139,4 +132,16 @@ main{
 
 #judgment{
     font-size: 20px;
+}
+
+.scroll_all{
+    position: sticky;
+    top: 150px;
+    float: right;
+    text-align: center;
+    font-size: 25px;
+}
+
+#scroll{
+    width: 60%;
 }

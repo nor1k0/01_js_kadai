@@ -48,7 +48,7 @@ var a =document.querySelectorAll('.nail_img');
 for(var i = 0; i < a.length; i++){
 
   a[i].onclick = function() {
-     document.getElementById('favorite_left_heart_img').src = this.src;
+     document.getElementById('scroll').src = this.src;
  }};
 // 参考サイト　https://sunsukeblog.com/javascript_change_pictures
 
