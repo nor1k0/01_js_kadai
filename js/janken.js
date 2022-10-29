@@ -44,165 +44,14 @@ if(nail_random === 0){
 });
 
 // nail favorite
-  $("#nail1").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320.jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320.jpeg");
-    }
-  });
+var a =document.querySelectorAll('.nail_img');
+for(var i = 0; i < a.length; i++){
 
+  a[i].onclick = function() {
+     document.getElementById('favorite_left_heart_img').src = this.src;
+ }};
+// 参考サイト　https://sunsukeblog.com/javascript_change_pictures
 
-  $("#nail2").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (1).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (1).jpeg");
-    }
-  });
-
-  $("#nail3").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (2).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (2).jpeg");
-    }
-  });
-
-  $("#nail4").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (3).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (3).jpeg");
-    }
-  });
-
-  $("#nail5").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (4).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (4).jpeg");
-    }
-  });
-
-  $("#nail6").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (5).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (5).jpeg");
-    }
-  });
-
-  $("#nail7").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (6).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (6).jpeg");
-    }
-  });
-
-  $("#nail8").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (7).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (7).jpeg");
-    }
-  });
-
-  $("#nail9").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (8).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (8).jpeg");
-    }
-  });
-
-  $("#nail10").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/320 (9).jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/320 (9).jpeg");
-    }
-  });
-
-  $("#nail11").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/321.jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/321.jpeg");
-    }
-  });
-
-  $("#nail12").on("click contextmenu", function (e) {
-    console.log(e.which);
-    if (e.which == 1) {
-      //左クリック
-      console.log("左クリック");
-      $(".favorite_left_heart_img").attr("src","./img/322.jpeg");
-    } else if (e.which == 3) {
-      //右クリック
-      console.log("右クリック");
-      $(".favorite_right_heart_img").attr("src","./img/322.jpeg");
-    }
-  });
-
-
-// 写真に連番をつけることでfor文のループ処理にトライしたかった。。
 
 // じゃんけん
 
@@ -280,4 +129,163 @@ $("#par_btn").on("click", function () {
 
     });
 
-    
+// 1回目の提出時
+  // $("#nail1").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320.jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320.jpeg");
+  //   }
+  // });
+
+
+  // $("#nail2").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (1).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (1).jpeg");
+  //   }
+  // });
+
+  // $("#nail3").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (2).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (2).jpeg");
+  //   }
+  // });
+
+  // $("#nail4").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (3).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (3).jpeg");
+  //   }
+  // });
+
+  // $("#nail5").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (4).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (4).jpeg");
+  //   }
+  // });
+
+  // $("#nail6").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (5).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (5).jpeg");
+  //   }
+  // });
+
+  // $("#nail7").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (6).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (6).jpeg");
+  //   }
+  // });
+
+  // $("#nail8").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (7).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (7).jpeg");
+  //   }
+  // });
+
+  // $("#nail9").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (8).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (8).jpeg");
+  //   }
+  // });
+
+  // $("#nail10").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/320 (9).jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/320 (9).jpeg");
+  //   }
+  // });
+
+  // $("#nail11").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/321.jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/321.jpeg");
+  //   }
+  // });
+
+  // $("#nail12").on("click contextmenu", function (e) {
+  //   console.log(e.which);
+  //   if (e.which == 1) {
+  //     //左クリック
+  //     console.log("左クリック");
+  //     $(".favorite_left_heart_img").attr("src","./img/322.jpeg");
+  //   } else if (e.which == 3) {
+  //     //右クリック
+  //     console.log("右クリック");
+  //     $(".favorite_right_heart_img").attr("src","./img/322.jpeg");
+  //   }
+  // });
+
+
+// 写真に連番をつけることでfor文のループ処理にトライしたかった。

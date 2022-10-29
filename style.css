@@ -76,31 +76,23 @@ button{
     width: 66%;
 }
 
-.lr{
-    display: flex;
-    justify-content: space-evenly;
-    height: 40px;
-}
-
 .favorite_frame{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.favorite_left_heart_img{
+.favorite_left_frame{
+    margin-top: 40px;
+    width: 50%;
+}
+
+#favorite_left_heart_img{
     width: 9%;
     position: absolute;
     margin-top: 3%;
     margin-left: 2.8%;
 }
 
-
-.favorite_right_heart_img{
-    width: 9%;
-    position: absolute;
-    margin-top: 3%;
-    margin-left: 2.8%;
-}
 
 .left{
     width: 100%;
