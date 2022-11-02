@@ -27,6 +27,7 @@ html {
     text-align: center;
     font-size: 70px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .main{
@@ -140,7 +141,7 @@ main{
 
 .scroll_all{
     position: sticky;
-    top: 150px;
+    top: 50px;
     float: right;
     text-align: center;
     font-size: 25px;
@@ -150,13 +151,9 @@ main{
     width: 60%;
 }
 
-#text_area{
-    height: 300px;
-}
-
 .memo1{
     position: sticky;
-    top: 150px;
+    top: 50px;
 }
 
 .memo_title{
