@@ -59,7 +59,25 @@ if(nail_random === 0){
 
 });
 
+// メモ帳
+$(".memo1").slideDown(1000);
 
+$("#save").on("click",function(){
+  const v = $("#text_area").val();
+  localStorage.setItem("memo",v);
+  alert("保存しました。");
+});
+
+$("#clear").on("click",function(){
+  localStorage.removeItem("memo");
+  alert("削除しました。")
+  $("#text_area").val("");
+});
+
+if(localStorage.getItem("memo")){
+  const v = localStorage.getItem("memo");
+  $("#text_area").val(v);
+};
 
 // じゃんけん
 

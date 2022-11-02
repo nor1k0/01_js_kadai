@@ -149,3 +149,42 @@ main{
 #scroll{
     width: 60%;
 }
+
+#text_area{
+    height: 300px;
+}
+
+.memo1{
+    position: sticky;
+    top: 150px;
+}
+
+.memo_title{
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+#save{
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70px;
+}
+
+#clear{
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 70px;
+}
+
