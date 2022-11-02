@@ -1,4 +1,20 @@
 
+// nail favorite
+var a =document.querySelectorAll('.nail_img');
+for(var i = 0; i < a.length; i++){
+
+  a[i].onclick = function() {
+     document.getElementById('scroll').src = this.src;
+ }};
+// 参考サイト　https://sunsukeblog.com/javascript_change_pictures
+
+
+//*  モーダル表示*/
+/* https://shu-naka-blog.com/website/modaal-js/#i */
+
+$('.gallery').modaal({
+  type: 'image'
+});
 
 // nail recommend
 $(".cute").on("click", function () {
@@ -43,91 +59,83 @@ if(nail_random === 0){
 
 });
 
-// nail favorite
-var a =document.querySelectorAll('.nail_img');
-for(var i = 0; i < a.length; i++){
-
-  a[i].onclick = function() {
-     document.getElementById('scroll').src = this.src;
- }};
-// 参考サイト　https://sunsukeblog.com/javascript_change_pictures
 
 
 // じゃんけん
 
-$("#gu_btn").on("click", function () {
+// $("#gu_btn").on("click", function () {
 
-var random = Math.floor(Math.random() * 3);
-console.log(random, "ランダムな数字");
+// var random = Math.floor(Math.random() * 3);
+// console.log(random, "ランダムな数字");
 
-if (random === 0) {
-    console.log("0=グー");
-    $("#pc_hands").attr("src", "./img/17433.png");
-    $("#judgment").text("DRAW");
-  } else if (random === 1) {
-    console.log("1=チョキ");
-    $("#pc_hands").attr("src", "./img/17434.png");
-    $("#judgment").text("WIN");
-  } else if (random === 2) {
-    console.log("2=パー");
-    $("#pc_hands").attr("src", "./img/17435.png");
-    $("#judgment").text("LOSE");
-  } 
+// if (random === 0) {
+//     console.log("0=グー");
+//     $("#pc_hands").attr("src", "./img/17433.png");
+//     $("#judgment").text("DRAW");
+//   } else if (random === 1) {
+//     console.log("1=チョキ");
+//     $("#pc_hands").attr("src", "./img/17434.png");
+//     $("#judgment").text("WIN");
+//   } else if (random === 2) {
+//     console.log("2=パー");
+//     $("#pc_hands").attr("src", "./img/17435.png");
+//     $("#judgment").text("LOSE");
+//   } 
 
-  $("#gu_btn").css("width" , "70px")
-  $("#cho_btn").css("width" , "40px")
-  $("#par_btn").css("width" , "50px")
-});
+//   $("#gu_btn").css("width" , "70px")
+//   $("#cho_btn").css("width" , "40px")
+//   $("#par_btn").css("width" , "50px")
+// });
 
-$("#cho_btn").on("click", function () {
+// $("#cho_btn").on("click", function () {
 
-    var random = Math.floor(Math.random() * 3);
-    console.log(random, "ランダムな数字");
+//     var random = Math.floor(Math.random() * 3);
+//     console.log(random, "ランダムな数字");
     
-    if (random === 0) {
-        console.log("0=グー");
-        $("#pc_hands").text("グー");
-        $("#pc_hands").attr("src", "./img/17433.png");
-        $("#judgment").text("LOSE");
-      } else if (random === 1) {
-        console.log("1=チョキ");
-        $("#pc_hands").attr("src", "./img/17434.png");
-        $("#judgment").text("DRAW");
-      } else if (random === 2) {
-        console.log("2=パー");
-        $("#pc_hands").attr("src", "./img/17435.png");
-        $("#judgment").text("WIN");
-      } 
+//     if (random === 0) {
+//         console.log("0=グー");
+//         $("#pc_hands").text("グー");
+//         $("#pc_hands").attr("src", "./img/17433.png");
+//         $("#judgment").text("LOSE");
+//       } else if (random === 1) {
+//         console.log("1=チョキ");
+//         $("#pc_hands").attr("src", "./img/17434.png");
+//         $("#judgment").text("DRAW");
+//       } else if (random === 2) {
+//         console.log("2=パー");
+//         $("#pc_hands").attr("src", "./img/17435.png");
+//         $("#judgment").text("WIN");
+//       } 
     
-      $("#gu_btn").css("width" , "50px")
-      $("#cho_btn").css("width" , "70px")
-      $("#par_btn").css("width" , "50px")
-    });
+//       $("#gu_btn").css("width" , "50px")
+//       $("#cho_btn").css("width" , "70px")
+//       $("#par_btn").css("width" , "50px")
+//     });
 
-$("#par_btn").on("click", function () {
+// $("#par_btn").on("click", function () {
 
-    var random = Math.floor(Math.random() * 3);
-    console.log(random, "ランダムな数字");
+//     var random = Math.floor(Math.random() * 3);
+//     console.log(random, "ランダムな数字");
     
-    if (random === 0) {
-        console.log("0=グー");
-        $("#pc_hands").attr("src", "./img/17433.png");
-        $("#judgment").text("WIN");
-      } else if (random === 1) {
-        console.log("1=チョキ");
-        $("#pc_hands").attr("src", "./img/17434.png");
-        $("#judgment").text("LOSE");
-      } else if (random === 2) {
-        console.log("2=パー");
-        $("#pc_hands").attr("src", "./img/17435.png");
-        $("#judgment").text("DRAW");
-      } 
+//     if (random === 0) {
+//         console.log("0=グー");
+//         $("#pc_hands").attr("src", "./img/17433.png");
+//         $("#judgment").text("WIN");
+//       } else if (random === 1) {
+//         console.log("1=チョキ");
+//         $("#pc_hands").attr("src", "./img/17434.png");
+//         $("#judgment").text("LOSE");
+//       } else if (random === 2) {
+//         console.log("2=パー");
+//         $("#pc_hands").attr("src", "./img/17435.png");
+//         $("#judgment").text("DRAW");
+//       } 
     
-      $("#gu_btn").css("width" , "50px")
-      $("#cho_btn").css("width" , "40px")
-      $("#par_btn").css("width" , "80px")
+//       $("#gu_btn").css("width" , "50px")
+//       $("#cho_btn").css("width" , "40px")
+//       $("#par_btn").css("width" , "80px")
 
-    });
+//     });
 
 // 1回目の提出時
   // $("#nail1").on("click contextmenu", function (e) {

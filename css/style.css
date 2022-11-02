@@ -91,23 +91,23 @@ button{
 .nail_img_list{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     justify-content: space-evenly;
 }
 
 ul {
     list-style: none;
   }
-
-li {
-    width: 33%;
-}
-
+  
 .nail_img{
-    width: 100%;
+    width: 25%;
     margin-bottom: 30px;
     margin-left: 10px;
 }
 
+.gallery-list li{
+  margin:0 10px 0 0;
+}
 
 .janken{
     text-align: center;
